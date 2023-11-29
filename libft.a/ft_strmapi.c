@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
@@ -30,20 +30,4 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	str[i] = '\0';
 	return (str);
-}
-char ft(unsigned int index, char c)
-{
-	if(c >= 'a' && c <= 'z')
-	{
-		return  c - 'a' + 'A';
-	}
-	return (c);
-}
-int main()
-{
-	char str[] = "hello";
-
-	char *result = ft_strmapi(str, NULL);
-
-	printf("%s", result);
 }
