@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_tolower(int i)
 {
@@ -19,13 +18,3 @@ int	ft_tolower(int i)
 		return (i + 32);
 	return (i);
 }
-/*int	main(void)
-{
-	char	up;
-	char	low;
-
-	up = 'A';
-	low = ft_tolower(up);
-	printf("upercase =>  %c", up);
-	printf("\nlowercase => %c", low);
-}*/
