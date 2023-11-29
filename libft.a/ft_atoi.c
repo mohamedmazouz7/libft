@@ -36,9 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (r * n);
 }
-#include <string.h>
-int main()
-{
-	printf("%d\n", ft_atoi("   5193451111111111111116fgdhdh"));
-	printf("%d\n", atoi("   5193451111111111111116dhdfhd"));
-}
