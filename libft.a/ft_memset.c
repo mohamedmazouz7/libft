@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
 void	*ft_memset(void *dest, int c, size_t count)
 {
 	unsigned char	*p;
@@ -23,12 +23,4 @@ void	*ft_memset(void *dest, int c, size_t count)
 		count--;
 	}
 	return (dest);
-}
-int main()
-{
-	int n = 52592526;
-	ft_memset(&n, 0, 4);
-	ft_memset(&n, 204, 1);
-	printf("n : %d\n", n); // n = 204
-	
 }
