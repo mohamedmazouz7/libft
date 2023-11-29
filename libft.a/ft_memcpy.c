@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -32,15 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*int main()
-{
-	int src[] = {1,2,3,4,8};
-	int dest[12] = {2,3,5,5,5};
-
-	ft_memcpy(dest, src, 4);
-	for (int i = 0; i < ; i++)
-	{
-		printf("%c ", dest[i]);
-	}
-	//printf("%s", ft_memcpy(dest, src, 3));
-}*/
