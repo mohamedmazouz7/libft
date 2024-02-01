@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: momazouz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/05 16:30:22 by momazouz          #+#    #+#             */
-/*   Updated: 2023/11/24 22:20:36 by momazouz         ###   ########.fr       */
+/*   Created: 2023/10/31 17:41:57 by momazouz          #+#    #+#             */
+/*   Updated: 2023/11/25 15:36:02 by momazouz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+void	ft_bzero(void *s, size_t n)
 {
-	int	i;
-	int	n;
-	long long int	r;
+	size_t	i;
 
 	i = 0;
-	n = 1;
-	r = 0;
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	while (i < n)
 	{
-		if (str[i] == '-')
-			n *= -1;
+		((char *)s)[i] = 0;
 		i++;
 	}
-	while (str[i] >= 48 && str[i] <= 57)
-	{
-		r = r * 10 + str[i] - '0';
-		i++;
-	}
-	return (r * n);
 }

@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
@@ -30,3 +32,32 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 		ft_memcpy(dest, src, len);
 	return (dest);
 }
+/*int main()
+{
+	char source[] = "Hello, world";
+	char destination[] = "hello, world";
+
+	// Using memmove to copy the content of source to destination
+	ft_memmove(destination, source, 3);
+
+	// Printing the result
+	printf("Source: %s\n", source);
+	printf("Destination: %s\n", destination);
+
+	return (0);
+}*/
+/*int main()
+{
+	int src[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+	int dest[10];
+	unsigned long i;
+
+	ft_memmove(dest, src, sizeof(int) * 9);
+
+	i = 0;
+	while (i < 9)
+	{
+		printf("\n%d\n ", dest[i]);
+		i++;
+	}
+}*/
